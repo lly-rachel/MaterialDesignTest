@@ -54,6 +54,17 @@ class MainActivity : AppCompatActivity() {
 
         initRecyclerviewData()
 
+        binding.swipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary)
+        binding.swipeRefreshLayout.setOnRefreshListener {
+            fruitList.clear()
+            repeat(20){
+                val index = ( 0 until fruits.size).random()
+                fruitList.add(fruits[index])
+            }
+            binding.recyclerview.adapter?.notifyDataSetChanged()
+            binding.swipeRefreshLayout.isRefreshing = false
+        }
+
         setContentView(binding.root)
     }
 
