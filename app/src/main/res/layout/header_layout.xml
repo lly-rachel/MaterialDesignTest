@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:background="#337AAB4F">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/avatar"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/user_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邮箱：970758884@qq.com"
+        android:layout_below="@+id/circle_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        />
+
+    <TextView
+        android:id="@+id/user_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号：19854559890"
+        android:layout_below="@+id/user_mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        />
+
+</RelativeLayout>
