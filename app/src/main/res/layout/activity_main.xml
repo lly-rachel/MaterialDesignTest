@@ -61,6 +61,8 @@
             android:background="@drawable/floatbutton"
             app:fabSize="mini"
             app:pressedTranslationZ="10dp"
+            android:tint="@color/colorPrimary"
+            app:backgroundTint="@color/colorPrimary"
             />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
