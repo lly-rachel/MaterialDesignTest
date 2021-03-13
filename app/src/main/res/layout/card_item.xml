@@ -12,7 +12,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#338fdd4b"
+        android:background="?android:attr/colorBackground"
         >
 
         <ImageView
@@ -32,7 +32,7 @@
             android:layout_below="@+id/fruit_photo"
             android:layout_centerHorizontal="true"
             android:textSize="16sp"
-            android:textColor="#000"
+            android:textColor="?android:attr/textColorPrimary"
             />
 
     </RelativeLayout>
